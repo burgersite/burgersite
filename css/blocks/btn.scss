@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.56rem 1.06rem;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: $red;
+  border-radius: 0.31rem;
+  outline: none;
+
+  &--color--transparent {
+    background-color: transparent;
+    text-transform: none;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn__header {
+    margin-right: 1.875rem;
+  }
+}

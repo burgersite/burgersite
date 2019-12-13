@@ -1,0 +1,122 @@
+// - header - при сужении до 768 ломается nav.
+//   - кнопка и лого прилегают к краям
+// - где лучше писать медиа запрос? В самом низу? Под блоком?
+// - не применилось h1: margin:0 похоже только в секциии intro
+// -не много ли в team кода при адаптиве
+// -class= "btn reviews__btn-480" - можно ли так писать по бэм? из секции reviews
+//  - &__checkbox-fake::after {
+//   top: 16%;
+//   left: 14%;
+//   transform: translate(-50%, -50%);
+// } не удалось выровнять 50 50
+// - есть ли в консоли инструмент пересчёта rem в px?
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+  font-family: 'Ubuntu','Arial', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  // max-width: 58.75rem;
+  max-width: 960px;
+  width: calc(100% - 10px);
+	margin: 0 auto;
+}
+
+.section {
+	height: 100vh;
+	min-height: 40.62rem;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	font-family: "Gagalin";
+  font-weight: 500;
+  font-size: 4.5rem;
+  color: $yellow;
+  line-height: 1;
+
+  &--color {
+    &--black {
+      color: $black;
+    }
+
+    &--white {
+      color: $white;
+    }
+	}
+	
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+.subtitle {
+	font-family: "Lifehack";
+	line-height: 1;
+
+	&--color {
+    &--black {
+      color: $black;
+    }
+
+    &--white {
+      color: $white;
+    }
+	}
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 50px;
+    letter-spacing: 1px;
+
+    &--color {
+      &--black {
+        letter-spacing: normal;
+      }
+    }
+  }
+}

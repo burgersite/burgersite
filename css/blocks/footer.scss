@@ -1,0 +1,39 @@
+.footer {
+  background-color: #000;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    // widows: 58.75rem;
+    width: calc(100% - 17px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      padding: 1.0625rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.1875rem;
+    }
+
+    &__contacts {
+      margin-bottom: 1.125rem;
+    }
+  }
+}

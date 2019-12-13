@@ -1,0 +1,32 @@
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$white: #fff;
+$gray: #393939;
+
+$z-fixed-menu: 100;
+
+@import "layout/base.scss";
+@import "layout/colors.scss";
+@import "layout/fonts.scss";
+@import "layout/normalize.scss";
+
+@import "blocks/btn.scss";
+@import "blocks/contacts.scss";
+@import "blocks/fixed-menu.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/nav.scss";
+@import "blocks/order.scss";
+@import "blocks/reviews.scss";
+@import "blocks/section-contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/team.scss";
+@import "blocks/value.scss";
+@import "blocks/wrappper.scss";

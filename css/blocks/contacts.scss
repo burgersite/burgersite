@@ -1,0 +1,26 @@
+.contacts {
+  font-family: 'Ubuntu';
+  font-size: 0.81rem;
+  color: $white;
+
+  &__address {
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    margin-bottom: 0.62rem;
+  }
+
+  &__icon {
+    max-height: 0.68rem;
+    max-width: 0.68rem;
+    fill: $red;
+    margin-right: 0.25rem;
+  }
+
+  &__phone {
+    color: $red;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
